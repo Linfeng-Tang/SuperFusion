@@ -19,7 +19,7 @@ The architecture of dense matcher, which consists of a pyramid feature extractor
 Architecture of the fusion network $\mathcal{N}_F$. Conv($c, k$) denotes a convolutional layer with $c$ output channels and kernel size of $k\times k$; GSAM indicates the global spatial attention module.
 
 ### Global Spatial Attention Module (GSAM)
-![The schematic illustration of the global spatial attention module (GSAM). The global attention is calculated by adapting a spatial RNN to aggregate the spatial context in four directions..](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/SAM.jpg)
+![The schematic illustration of the global spatial attention module (GSAM). The global attention is calculated by adapting a spatial RNN to aggregate the spatial context in four directions.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/SAM.jpg)
 The schematic illustration of the global spatial attention module (GSAM). The global attention is calculated by adapting a spatial RNN to aggregate the spatial context in four directions.
 
 ## Recommended Environment
@@ -47,6 +47,8 @@ Quantitative registration performance on MSRS and RoadScene. Mean reprojection e
 Qualitative registration performance of DASC, RIFT, GLU-Net, UMF-CMGR, CrossRAFT, and our SuperFusion. The first four rows of images are from the MSRS dataset, and the last two are from the RoadScene dataset. The purple textures are the gradients of registered infrared images and the backgrounds are the corresponding ground truths. The discriminateive regions that demonstrate the superiority of our method are highlighted in boxes. Note that, the gradients of the second column images are from the warped images, i.e., the misaligned infrared images.
 
 ## Fusion Results
+![The schematic illustration of the global spatial attention module (GSAM). The global attention is calculated by adapting a spatial RNN to aggregate the spatial context in four directions..](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
+The schematic illustration of the global spatial attention module (GSAM). The global attention is calculated by adapting a spatial RNN to aggregate the spatial context in four directions.
 
 ![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
 
