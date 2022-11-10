@@ -48,10 +48,10 @@ Qualitative registration performance of DASC, RIFT, GLU-Net, UMF-CMGR, CrossRAFT
 
 ## Fusion Results
 
-![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset. A point $(x, y)$ on the curve denotes that there are $100 * x$ percent of image pairs that have metric values no more than $y$.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
+![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
 Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset. A point $(x, y)$ on the curve denotes that there are $100 * x$ percent of image pairs that have metric values no more than $y$.
 
-![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $25$ image pairs from the RoadScene dataset.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
+![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $25$ image pairs from the RoadScene dataset.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/RoadScene.jpg)
 Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $25$ image pairs from the RoadScene dataset.
 
 ![Qualitative comparison results of SuperFusion with five state-of-the-art infrared and visible image fusion methods on the MSRS and RoadScene datasets. All methods employ the built-in registration module (e.g., UMF-CMGR and our SuperFusion) or CrossRAFT to register the source images.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Fusion.jpg)
