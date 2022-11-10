@@ -12,6 +12,7 @@ The overall framework of the proposed SuperFusion for cross-modal image registra
 ## Network Architecture
 ### Dense Matcher
 ![The architecture of dense matcher, which consists of a pyramid feature extractor and iterative flow estimators. Flows are estimated in three scales iteratively and summed up.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/DenseMatcher.jpg)
+
 The architecture of dense matcher, which consists of a pyramid feature extractor and iterative flow estimators. Flows are estimated in three scales iteratively and summed up.
 ### Fusion Network
 ![Architecture of the fusion network $\mathcal{N}_F$. Conv($c, k$) denotes a convolutional layer with $c$ output channels and kernel size of $k\times k$; GSAM indicates the global spatial attention module.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/FusionNet.jpg)
@@ -38,13 +39,15 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
 
 
 ## Registration Results
-![Quantitative registration performance on MSRS and RoadScene. Mean reprojection error~(RE) and end-point error~(EPE) are reported.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Reg-table.jpg)
 Quantitative registration performance on MSRS and RoadScene. Mean reprojection error (RE) and end-point error (EPE) are reported.
+![Quantitative registration performance on MSRS and RoadScene. Mean reprojection error~(RE) and end-point error~(EPE) are reported.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Reg-table.jpg)
+
 
 ![Qualitative registration performance of DASC, RIFT, GLU-Net, UMF-CMGR, CrossRAFT, and our SuperFusion. The first four rows of images are from the MSRS dataset, and the last two are from the RoadScene dataset. The purple textures are the gradients of registered infrared images and the backgrounds are the corresponding ground truths. The discriminateive regions that demonstrate the superiority of our method are highlighted in boxes. Note that, the gradients of the second column images are from the warped images, i.e. , the misaligned infrared images.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Reg.jpg)
-Qualitative registration performance of DASC, RIFT, GLU-Net, UMF-CMGR, CrossRAFT, and our SuperFusion. The first four rows of images are from the MSRS dataset, and the last two are from the RoadScene dataset. The purple textures are the gradients of registered infrared images and the backgrounds are the corresponding ground truths. The discriminateive regions that demonstrate the superiority of our method are highlighted in boxes. Note that, the gradients of the second column images are from the warped images, i.e. , the misaligned infrared images.
+Qualitative registration performance of DASC, RIFT, GLU-Net, UMF-CMGR, CrossRAFT, and our SuperFusion. The first four rows of images are from the MSRS dataset, and the last two are from the RoadScene dataset. The purple textures are the gradients of registered infrared images and the backgrounds are the corresponding ground truths. The discriminateive regions that demonstrate the superiority of our method are highlighted in boxes. Note that, the gradients of the second column images are from the warped images, i.e., the misaligned infrared images.
 
 ## Fusion Results
+
 ![Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset. A point $(x, y)$ on the curve denotes that there are $100 * x$ percent of image pairs that have metric values no more than $y$.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/MSRS.jpg)
 Quantitative comparison results of SuperFusion with five state-of-the-art alternatives on $361$ image pairs from the MSRS dataset. A point $(x, y)$ on the curve denotes that there are $100 * x$ percent of image pairs that have metric values no more than $y$.
 
