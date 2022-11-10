@@ -51,6 +51,15 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
     python test.py --mode=Reg&Fusion --dataset_name=RoadScene
  
 ## To Train
+**We suggest using our pre-trained model to test SuperFusion.**
+### Training the registration and fusion model 
+#### MSRS dataset
+    python train.py --dataroot=./dataset/train/MSRS --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/MSRS.pth --stage=RF
+#### RoadScene dataset    
+    python train.py --dataroot=./dataset/train/RoadScene --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/RoadScene.pth --stage=RF
+    
+### Fine-tuning the fusion network with the semantic constraint
+    python train.py --dataroot=./dataset/train/MSRS --n_ep=2000 --n_ep_decay=1600 --resume=./checkpoint/MSRS.pth --stage=FS
 
 
 ## Registration Results
