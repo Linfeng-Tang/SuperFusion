@@ -30,12 +30,27 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
  - [ ] opencv  4.5.5 
  - [ ] pillow  9.2.0
  
-## To Train
 
 ## To Test
-
-
-
+### Registration
+#### MSRS dataset
+    python test.py --mode=Reg --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Reg --dataset_name=RoadScene
+    
+ ### Fusion 
+#### MSRS dataset
+    python test.py --mode=Fusion --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Fusion --dataset_name=RoadScene
+    
+### Registration and Fusion 
+#### MSRS dataset
+    python test.py --mode=Reg&Fusion --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Reg&Fusion --dataset_name=RoadScene
+ 
+## To Train
 
 
 ## Registration Results
