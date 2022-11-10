@@ -96,14 +96,10 @@ Segmentation results for source images and fused images from the MSRS dataset.  
 
 ## If this work is helpful to you, please cite it as：
 ```
-@article{TANG2022SeAFusion,
-title = {Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network},
-author = {Linfeng Tang and Jiteng Yuan and Jiayi Ma},
-journal = {Information Fusion},
-volume = {82},
-pages = {28-42},
-year = {2022},
-issn = {1566-2535},
-publisher={Elsevier}
+@article{TANG2022SuperFusion,
+title = {SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness},
+author = {Tang, Linfeng and  Deng, Yuxin and  Ma, Yong and Huang, Jun and Ma, Jiayi},
+journal = {IEEE/CAA Journal of Automatica Sinica},
+year = {2022}
 }
 ```
