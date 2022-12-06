@@ -3,7 +3,7 @@
 
 #  SuperFusion
 
-This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://www.sciencedirect.com/science/article/pii/S1566253521002542)"
+This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://ieeexplore.ieee.org/document/9970457)"
 
 ## Framework
 ![The overall framework of the proposed SuperFusion for cross-modal image registration and fusion.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Overframe.jpg)
