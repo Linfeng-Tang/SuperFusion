@@ -97,9 +97,13 @@ Segmentation results for source images and fused images from the MSRS dataset.  
 ## If this work is helpful to you, please cite it as：
 ```
 @article{TANG2022SuperFusion,
-title = {SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness},
-author = {Tang, Linfeng and  Deng, Yuxin and  Ma, Yong and Huang, Jun and Ma, Jiayi},
-journal = {IEEE/CAA Journal of Automatica Sinica},
-year = {2022}
+  title={SuperFusion: A versatile image registration and fusion network with semantic awareness},
+  author={Tang, Linfeng and Deng, Yuxin and Ma, Yong and Huang, Jun and Ma, Jiayi},
+  journal={IEEE/CAA Journal of Automatica Sinica},
+  volume={9},
+  number={12},
+  pages={2121--2137},
+  year={2022},
+  publisher={IEEE}
 }
 ```
