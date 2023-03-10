@@ -59,6 +59,7 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
     
     python train.py --dataroot=./dataset/train/MSRS --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/MSRS.pth --stage=RF
 #### RoadScene dataset    
+You can download the RoadScene dataset from [https://github.com/hanna-xu/RoadScene](https://github.com/hanna-xu/RoadScene), and put the infrared and visible images into './dataset/train/RoadScene/ir' and '. /dataset/train/RoadScene/vi' for training.
     python train.py --dataroot=./dataset/train/RoadScene --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/RoadScene.pth --stage=RF
     
 ### Fine-tuning the fusion network with the semantic constraint
