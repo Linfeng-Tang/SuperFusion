@@ -3,7 +3,7 @@
 
 #  SuperFusion
 
-This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://www.sciencedirect.com/science/article/pii/S1566253521002542)"
+This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://ieeexplore.ieee.org/document/9970457)"
 
 ## Framework
 ![The overall framework of the proposed SuperFusion for cross-modal image registration and fusion.](https://github.com/Linfeng-Tang/SuperFusion/blob/main/Figure/Overframe.jpg)
@@ -30,12 +30,36 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
  - [ ] opencv  4.5.5 
  - [ ] pillow  9.2.0
  
-## To Train
 
 ## To Test
-
-
-
+### Registration
+#### MSRS dataset
+    python test.py --mode=Reg --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Reg --dataset_name=RoadScene
+    
+ ### Fusion 
+#### MSRS dataset
+    python test.py --mode=Fusion --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Fusion --dataset_name=RoadScene
+    
+### Registration and Fusion 
+#### MSRS dataset
+    python test.py --mode=Reg&Fusion --dataset_name=MSRS 
+#### RoadScene dataset    
+    python test.py --mode=Reg&Fusion --dataset_name=RoadScene
+ 
+## To Train
+**We suggest using our pre-trained model to test SuperFusion.**
+### Training the registration and fusion model 
+#### MSRS dataset
+    python train.py --dataroot=./dataset/train/MSRS --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/MSRS.pth --stage=RF
+#### RoadScene dataset    
+    python train.py --dataroot=./dataset/train/RoadScene --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/RoadScene.pth --stage=RF
+    
+### Fine-tuning the fusion network with the semantic constraint
+    python train.py --dataroot=./dataset/train/MSRS --n_ep=2000 --n_ep_decay=1600 --resume=./checkpoint/MSRS.pth --stage=FS
 
 
 ## Registration Results
@@ -72,14 +96,14 @@ Segmentation results for source images and fused images from the MSRS dataset.  
 
 ## If this work is helpful to you, please cite it as：
 ```
-@article{TANG2022SeAFusion,
-title = {Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network},
-author = {Linfeng Tang and Jiteng Yuan and Jiayi Ma},
-journal = {Information Fusion},
-volume = {82},
-pages = {28-42},
-year = {2022},
-issn = {1566-2535},
-publisher={Elsevier}
+@article{TANG2022SuperFusion,
+  title={SuperFusion: A versatile image registration and fusion network with semantic awareness},
+  author={Tang, Linfeng and Deng, Yuxin and Ma, Yong and Huang, Jun and Ma, Jiayi},
+  journal={IEEE/CAA Journal of Automatica Sinica},
+  volume={9},
+  number={12},
+  pages={2121--2137},
+  year={2022},
+  publisher={IEEE}
 }
 ```
