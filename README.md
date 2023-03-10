@@ -54,7 +54,8 @@ The schematic illustration of the global spatial attention module (GSAM). The gl
 **We suggest using our pre-trained model to test SuperFusion.**
 ### Training the registration and fusion model 
 #### MSRS dataset
-    **First, you need to download the train set from [https://github.com/Linfeng-Tang/MSRS/tree/main/train](https://github.com/Linfeng-Tang/MSRS/tree/main/train) and place '/MSRS/train/ir' and '/MSRS/train/vi' in './dataset/train/MSRS/ir' and '. /dataset/train/MSRS/vi', respectively.**
+ **First, you need to download the train set from [https://github.com/Linfeng-Tang/MSRS/tree/main/train](https://github.com/Linfeng-Tang/MSRS/tree/main/train) and place '/MSRS/train/ir' and '/MSRS/train/vi' in './dataset/train/MSRS/ir' and '. /dataset/train/MSRS/vi', respectively.**
+   
     
     python train.py --dataroot=./dataset/train/MSRS --n_ep=1000 --n_ep_decay=800 --resume=./checkpoint/MSRS.pth --stage=RF
 #### RoadScene dataset    
