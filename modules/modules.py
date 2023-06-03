@@ -66,7 +66,7 @@ class DispEstimator(nn.Module):
     def localcorr(self,feat1,feat2):
         feat = self.featcompressor(torch.cat([feat1,feat2],dim=1))
         b,c,h,w = feat2.shape
-        feat1_smooth = KF.gaussian_blur2d(feat1,[13,13],[3,3],border_type='constant')
+        feat1_smooth = KF.gaussian_blur2d(feat1,(13,13),(3,3),border_type='constant')
         feat1_loc_blk = F.unfold(feat1_smooth,kernel_size=self.corrks,dilation=4,padding=2*(self.corrks-1),stride=1).reshape(b,c,-1,h,w)
         localcorr = (feat2.unsqueeze(2)-feat1_loc_blk).pow(2).mean(dim=1)
         corr = torch.cat([feat,localcorr],dim=1)
@@ -84,7 +84,7 @@ class DispEstimator(nn.Module):
         corr = self.localcorr(feat1,feat2)
         for i,layer in enumerate(self.layers):
             corr = layer(corr)
-        corr = KF.gaussian_blur2d(corr,[13,13],[3,3],border_type='replicate')
+        corr = KF.gaussian_blur2d(corr,(13,13),(3,3),border_type='replicate')
         disp = corr.clamp(min=-300,max=300)
         # print(disp.shape)
         # print(feat1.shape)
@@ -204,7 +204,7 @@ class DenseMatcher(nn.Module):
         #finetune
         disp_scaleup = (disp1+disp2)*self.scale
         disp = self.refiner(feat11,feat12,disp_scaleup)
-        disp = KF.gaussian_blur2d(disp,[17,17],[5,5],border_type='replicate')/self.scale
+        disp = KF.gaussian_blur2d(disp,(17,17),(5,5),border_type='replicate')/self.scale
         if self.training:
             return disp,disp_scaleup/self.scale,disp2
         return disp,None,None    
