@@ -29,8 +29,8 @@ def randflow(img,angle=7,trans=0.07,ratio=1,sigma=15,base=500):
     disp = torch.rand([1,2,h,w])*2-1
     #disp = KF.gaussian_blur2d(disp,kernel_size=[(3*sigma)//2*2+1,(3*sigma)//2*2+1],sigma=[sigma,sigma])
     for i in range(5):
-        disp = KF.gaussian_blur2d(disp,kernel_size=[(3*sigma)//2*2+1,(3*sigma)//2*2+1],sigma=[sigma,sigma])
-    disp = KF.gaussian_blur2d(disp,kernel_size=[(3*sigma)//2*2+1,(3*sigma)//2*2+1],sigma=[sigma,sigma]).permute(0,2,3,1)*ratio
+        disp = KF.gaussian_blur2d(disp,kernel_size=((3*sigma)//2*2+1,(3*sigma)//2*2+1),sigma=(sigma,sigma))
+    disp = KF.gaussian_blur2d(disp,kernel_size=((3*sigma)//2*2+1,(3*sigma)//2*2+1),sigma=(sigma,sigma)).permute(0,2,3,1)*ratio
 
     disp = (disp+warp_grid-grid)*base_scale
     trans_grid = grid+disp
