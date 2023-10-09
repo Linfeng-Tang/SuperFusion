@@ -9,7 +9,7 @@ from tqdm import tqdm
 os.environ['CUDA_VISIBLE_DEVICES']='2'
 parser = argparse.ArgumentParser()
 parser.add_argument('--mode', type=str, default='Reg&Fusion', help='Reg for only image registration, Fusion for only image fusion, Reg&Fusion for image registration and fusion')
-parser.add_argument('--dataset_name', type=str, default='MSRS', help='MSRS or Roadscene')
+parser.add_argument('--dataset_name', type=str, default='MSRS', help='MSRS or RoadScene')
 
 if __name__ == '__main__':
     opts = parser.parse_args()
