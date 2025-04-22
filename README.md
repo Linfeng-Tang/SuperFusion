@@ -2,6 +2,9 @@
 
 
 #  SuperFusion
+[2025-3-15] 我们的论文《[C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning]([https://github.com/Linfeng-Tang/C2RF))》被**International Journal of Computer Vision (IJCV)** 正式接收！[[论文下载](https://link.springer.com/article/10.1007/s11263-025-02427-1)] [[Code](https://github.com/Linfeng-Tang/C2RF)]
+
+## Welcome to follow the further work of our SuperFusion：[C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning](https://link.springer.com/article/10.1007/s11263-025-02427-1) **International Journal of Computer Vision (IJCV)** [[Paper](https://link.springer.com/article/10.1007/s11263-025-02427-1)] [[Code](https://github.com/Linfeng-Tang/C2RF)]
 
 This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://ieeexplore.ieee.org/document/9970457)"
 
