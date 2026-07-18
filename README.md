@@ -2,6 +2,14 @@
 
 
 #  SuperFusion
+
+<p align="center">
+  <a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/ESI_Hot_Paper-Top_0.1%25-E85D3F?style=for-the-badge" alt="ESI Hot Paper (top 0.1%)"></a>
+  <a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/ESI_Highly_Cited_Paper-Top_1%25-2F6FB0?style=for-the-badge" alt="ESI Highly Cited Paper (top 1%)"></a>
+  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PyRqpAsAAAAJ&citation_for_view=PyRqpAsAAAAJ:eQOLeE2rZwMC"><img src="https://img.shields.io/badge/Google_Scholar_Citations-504-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar citations"></a>
+</p>
+<p align="center"><sub>Google Scholar citation count updated July 18, 2026.</sub></p>
+
 ## Welcome to follow the further work of our SuperFusion：[C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning](https://link.springer.com/article/10.1007/s11263-025-02427-1) **International Journal of Computer Vision (IJCV 2025)** [[Paper](https://link.springer.com/article/10.1007/s11263-025-02427-1)] [[Code](https://github.com/Linfeng-Tang/C2RF)]
 
 This is official Pytorch implementation of "[SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness](https://ieeexplore.ieee.org/document/9970457)"
