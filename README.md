@@ -1,14 +1,9 @@
+<h1 align="center"><a href="https://ieeexplore.ieee.org/document/9970457">SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness</a></h1>
 
-
-
-#  SuperFusion
-
-<p align="center">
-  <a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/ESI_Hot_Paper-Top_0.1%25-E85D3F?style=for-the-badge" alt="ESI Hot Paper (top 0.1%)"></a>
-  <a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/ESI_Highly_Cited_Paper-Top_1%25-2F6FB0?style=for-the-badge" alt="ESI Highly Cited Paper (top 1%)"></a>
-  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PyRqpAsAAAAJ&citation_for_view=PyRqpAsAAAAJ:eQOLeE2rZwMC"><img src="https://img.shields.io/badge/Google_Scholar_Citations-504-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar citations"></a>
-</p>
-<p align="center"><sub>Google Scholar citation count updated July 18, 2026.</sub></p>
+<p align="center"><a href="https://github.com/Linfeng-Tang">Linfeng Tang</a>&emsp; Yuxin Deng&emsp; Yong Ma&emsp; Jun Huang&emsp; <a href="https://sites.google.com/site/jiayima2013">Jiayi Ma</a></p>
+<p align="center"><strong>Wuhan University &middot; Northwestern Polytechnical University</strong></p>
+<p align="center"><strong>IEEE/CAA Journal of Automatica Sinica</strong> &middot; 2022</p>
+<p align="center"><a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/%F0%9F%94%A5_ESI_Hot-Top_0.1%25-E85D3F?style=flat-square" alt="ESI Hot Paper (top 0.1%)"></a> <a href="https://esi.help.clarivate.com/Content/overview.htm"><img src="https://img.shields.io/badge/%F0%9F%8F%86_ESI_Highly_Cited-Top_1%25-D4A017?style=flat-square" alt="ESI Highly Cited Paper (top 1%)"></a><br><sub><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PyRqpAsAAAAJ&citation_for_view=PyRqpAsAAAAJ:eQOLeE2rZwMC">Google Scholar &middot; <strong>504 citations</strong></a> &middot; updated July 18, 2026</sub></p>
 
 ## Welcome to follow the further work of our SuperFusion：[C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning](https://link.springer.com/article/10.1007/s11263-025-02427-1) **International Journal of Computer Vision (IJCV 2025)** [[Paper](https://link.springer.com/article/10.1007/s11263-025-02427-1)] [[Code](https://github.com/Linfeng-Tang/C2RF)]
 
